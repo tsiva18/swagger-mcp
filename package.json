@@ -1,6 +1,6 @@
 {
   "name": "@tsiva18/swagger-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NestJS-based MCP server for Swagger/OpenAPI documentation inspection",
   "type": "module",
   "main": "dist/main.js",
