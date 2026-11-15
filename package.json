@@ -4,11 +4,40 @@
   "description": "NestJS-based MCP server for Swagger/OpenAPI documentation inspection",
   "type": "module",
   "main": "dist/main.js",
+  "bin": {
+    "swagger-mcp": "./dist/main.js",
+    "swagger-mcp-server": "./dist/main.js"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
+    "prepublishOnly": "npm run build",
     "start": "node dist/main.js",
     "start:dev": "tsx src/main.ts"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsiva18/swagger-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "swagger",
+    "openapi",
+    "nestjs",
+    "mcp-server"
+  ],
+  "author": "Sivaram",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsiva18/swagger-mcp/issues"
+  },
+  "homepage": "https://github.com/tsiva18/swagger-mcp#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.6.1",
     "@nestjs/common": "^11.0.10",

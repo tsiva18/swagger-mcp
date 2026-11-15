@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import 'reflect-metadata';
 import { ConsoleLogger, LogLevel } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';

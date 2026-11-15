@@ -78,6 +78,26 @@ npm run start:dev
 
 Add the server to your MCP client configuration (e.g., Claude Desktop, Cursor, Antigravity, or Cline):
 
+### Using NPX (Recommended - No installation required)
+
+```json
+{
+  "mcpServers": {
+    "swagger-api-reference": {
+      "command": "npx",
+      "args": ["-y", "@tsiva18/swagger-mcp-server"],
+      "env": {
+        "SWAGGER_URL": "https://api.example.com/api-json",
+        "SWAGGER_USERNAME": "example",
+        "SWAGGER_PASSWORD": "example"
+      }
+    }
+  }
+}
+```
+
+### Using Local Source
+
 ```json
 {
   "mcpServers": {
